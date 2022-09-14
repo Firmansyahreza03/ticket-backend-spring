@@ -234,6 +234,7 @@ public class ThreadHeaderServiceImpl extends BaseServiceImpl implements ThreadHe
 			data.setTitle(header.getTitle());
 			data.setIsActive(header.getIsActive());
 			data.setVersion(header.getVersion());
+			data.setCreatedAt(header.getCreatedAt());
 			datas.add(data);
 		}
 

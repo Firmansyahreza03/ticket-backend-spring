@@ -240,11 +240,11 @@ insert into t_role (role_name, role_code, created_by, created_at, updated_by, up
 	('Person_in_Charge','PIC',null,now(),null,now(),true,0),
 	('Customer','CUST',null,now(),null,now(),true,0);	
 
+INSERT into t_company (company_name, email, address, created_by, created_at, updated_by, updated_at, is_active, "version") values 
+	('PT Bulan', 'moon@company.com','Jl. moon', null, now(), null, now(), true, 0);
+
 INSERT into t_user (role_id, user_username, user_pass, created_by, created_at, updated_by, updated_at, is_active, "version") values 
 	(1,'superadmin','superadmin',null,now(),null,now(),true,0);
 
 INSERT into t_employee (full_name, user_id, created_by, created_at, updated_by, updated_at, is_active, "version") values 
 	('Admin Super', 1, null, now(), null, now(), true, 0);
-
-INSERT into t_company (company_name, email, address, created_by, created_at, updated_by, updated_at, is_active, "version") values 
-	('PT Bulan', 'moon@company.com','Jl. moon', null, now(), null, now(), true, 0);

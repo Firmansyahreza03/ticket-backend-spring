@@ -21,8 +21,11 @@ public class ObjectConfig {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:4200", "http://localhost:3000", "http://localhost:8081", "http://192.168.10.102:8081").allowedMethods(
+				registry.addMapping("/**").allowedOrigins("*").allowedMethods(
 						HttpMethod.DELETE.name(), HttpMethod.PUT.name(), HttpMethod.POST.name(), HttpMethod.GET.name());
+				
+//				registry.addMapping("/**").allowedOrigins("http://localhost:4200", "http://localhost:3000", "http://localhost:8081", "http://192.168.10.102:5555").allowedMethods(
+//						HttpMethod.DELETE.name(), HttpMethod.PUT.name(), HttpMethod.POST.name(), HttpMethod.GET.name());
 				
 //				registry.addMapping("/**").allowedOrigins("http://localhost:3000").allowedMethods(
 //						HttpMethod.DELETE.name(), HttpMethod.PUT.name(), HttpMethod.POST.name(), HttpMethod.GET.name());
